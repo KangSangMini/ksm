@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>목록만들기</title>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+      href="../css/2.css">  
+</head>
+    <body>
+        <h2>상품구성</h2>
+        <table border="4">
+            <caption>선물용과 가정용 상품 구성</caption>
+            <colgroup>
+                <col style="background-color: brown; ">
+                <col>
+                <col style="width:150px;">
+            </colgroup>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+            <tr>  
+                <td>선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>선물용</td>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <tr>
+                <td>가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>30,000원</td>
+            </tr>
+            <tr>
+                <td>가정용</td>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000원</td>
+            </tr>
+        </table>
+    </body>
+
+    <br>
+
+    <h2>상품 구성</h2>
+    <table border="2">
+        <caption>선물용과 가정용 상품 구성</caption>
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>  
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>30,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000원</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>요안도라 객실</caption>
+        <thead>
+            <tr>
+                <th>방 이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>유채방</td>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr><td rowspan="2">동백방</td>
+                <td>동성 도미토리</td>
+            </tr>
+            <tr>
+                <td>가족 1팀</td>
+            </tr>
+            <tr><td>천혜향방</td>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">바깥채 전체를 렌트합니다</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <p>원래크기 이미지</p>
+    <img src="../img/1.jpg" alt="강아지">
+    <p>width=50%,height=50%로 지정한 이미지</p>
+    <img src="../img/1.jpg" alt="강아지" width="50%">
+    <p>width=100%,height=100%로 지정한 이미지</p>
+    <img src="../img/1.jpg" alt="강아지" width="100%">
+    <br>
+    <br>
+
+    <from method="POST" name="myForm" action="http://naver.com" target="_self">
+        <input type="text" name="userName">
+        <input type="submit">
+    </from>
+
+</html>
